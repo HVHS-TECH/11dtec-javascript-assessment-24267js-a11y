@@ -1,21 +1,20 @@
 nav{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    float: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0b0b0b;
+  float: center;
 }
 
 nav a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-
 nav a:hover {
-    background-color: bisque;
+  background-color: #7A918D;
 }
