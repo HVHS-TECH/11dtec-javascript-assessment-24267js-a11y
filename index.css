@@ -29,5 +29,10 @@ img{
 }
 
 .logo {
-  float
+    float: left;
+    display: flex;
+    width: auto;
+    height: 150px;;
+    justify-content: left;
+    size: 20px;
 }
