@@ -28,14 +28,6 @@ img{
     margin: auto;
 }
 
-.logo {
-    float: left;
-    display: flex;
-    width: auto;
-    height: 150px;;
-    justify-content: left;
-    size: 20px;
-}
 
 .whats {
   text-align: center;
