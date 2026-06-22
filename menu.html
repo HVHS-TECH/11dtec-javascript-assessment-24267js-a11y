@@ -29,6 +29,7 @@
 
 <form onsubmit="return false">
     <label for="orderField">Order:</label>
-    <input type="number"
+    <input type="number" id="orderField" name="formOrder" min="0" max="100" step="1">
+    <input type="submit" onclick="getOrderInput()">
 </form>
-<center><button type="button" onclick="contact.html">Place Your order!</button></center>
+
