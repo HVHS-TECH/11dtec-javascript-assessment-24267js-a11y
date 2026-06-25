@@ -33,3 +33,10 @@ img{
   text-align: center;
 }
 
+.products {
+  display: grid;
+}
+
+.info {
+  display: grid;
+}
