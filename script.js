@@ -1,6 +1,9 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+
+
+
 var products = {
     "yuja ade": { amount: 0, _price: 0},
     "strawberry,lemon ade": { amount: 0, _price: 0 },
