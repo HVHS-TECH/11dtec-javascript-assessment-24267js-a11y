@@ -21,6 +21,20 @@ var products = {
      finalnumber: 0,
 };
 
+function getNameInput() {
+  const NAME_FIELD = document.getElementById("nameField");
+  let username = NAME_FIELD.value;
+  OUTPUT.innerHTML = "<p>Your name is " + username + "</p>";
+}
+
+
+function getMoneyInput() {
+  const MONEY_FIELD = document.getElementById("MoneyField");
+  let money = MONEY_FIELD.value;
+  OUTPUT.innerHTML = "<p>You have $" + money + " in pocket money.</p>";
+}
+
+
 function items() {
     OUTPUT.innerHTML += "<h1>Here Are The Items in your cart</h1>";
 }
@@ -32,4 +46,6 @@ function displayProducts(_product,_price){
 
 function ViewitemsinCart() {
     items();
+    getNameInput();
+    getMoneyInput();
 }
