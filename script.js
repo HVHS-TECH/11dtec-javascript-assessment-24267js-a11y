@@ -17,8 +17,14 @@ var products = {
      "Spinach & Feta Roll:": { amount: 0, _price: 0 },
      finalnumber: 0,
 };
+
+function items() {
+    OUTPUT.innerHTML += "<h1>Here Are The Items in your cart</h1>";
+}
 function displayProducts(_product,_price){
     OUTPUT.innerHTML += _product + ": $" + _price.toFixed(2) + "<br>";
 
 }
 
+
+function ViewitemsinCart 
