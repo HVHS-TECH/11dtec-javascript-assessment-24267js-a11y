@@ -1,7 +1,8 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-
+getMoneyInput(money);
+getNameInput(username);
 
 
 var products = {
