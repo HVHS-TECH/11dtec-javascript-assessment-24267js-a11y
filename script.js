@@ -27,4 +27,6 @@ function displayProducts(_product,_price){
 }
 
 
-function ViewitemsinCart 
+function ViewitemsinCart() {
+    items();
+}
