@@ -19,6 +19,7 @@ var products = {
 };
 function displayProducts(_product,_price){
     OUTPUT.innerHTML += _product + ": $" + _price.toFixed(2) + "<br>";
+    
 }
 
 function ViewitemsinCart(){
