@@ -1,6 +1,16 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+var username = "any"
+
+
+
+
+
+
+
+
+
 getmoneyInput(money);
 getNameInput(username);
 
