@@ -1,7 +1,7 @@
 console.log("Hello world!")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-getMoneyInput(money);
+getmoneyInput(money);
 getNameInput(username);
 
 
@@ -29,7 +29,7 @@ function getNameInput() {
 }
 
 
-function getMoneyInput() {
+function getmoneyInput() {
   const MONEY_FIELD = document.getElementById("MoneyField");
   let money = MONEY_FIELD.value;
   OUTPUT.innerHTML = "<p>You have $" + money + " in pocket money.</p>";
@@ -48,5 +48,5 @@ function displayProducts(_product,_price){
 function ViewitemsinCart() {
     items();
     getNameInput();
-    getMoneyInput();
+    getmoneyInput();
 }
