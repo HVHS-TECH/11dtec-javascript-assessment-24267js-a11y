@@ -34,7 +34,7 @@ function getNameInput() {
 function getmoneyInput() {
   const MONEY_FIELD = document.getElementById("moneyField");
   let money = MONEY_FIELD.value;
-  OUTPUT.innerHTML = "<p>You have $" + money + " in pocket money.</p>";
+  OUTPUT.innerHTML = "<p>You have $" + money + " in your wallet.</p>";
 }
 
 
