@@ -31,7 +31,7 @@ function getNameInput() {
 }
 
 
-function getmoneyInput() {
+function getMoneyInput() {
   const MONEY_FIELD = document.getElementById("moneyField");
   let money = MONEY_FIELD.value;
   OUTPUT.innerHTML = "<p>You have $" + money + " in your wallet.</p>";
@@ -50,5 +50,5 @@ function displayProducts(_product,_price){
 function ViewitemsinCart() {
     items();
     getNameInput();
-    getmoneyInput();
+    getMoneyInput();
 }
