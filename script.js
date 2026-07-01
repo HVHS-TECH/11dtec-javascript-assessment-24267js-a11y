@@ -22,6 +22,8 @@ var products = {
      finalnumber: 0,
 };
 
+
+
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
   let username = NAME_FIELD.value;
@@ -30,7 +32,7 @@ function getNameInput() {
 
 
 function getmoneyInput() {
-  const MONEY_FIELD = document.getElementById("MoneyField");
+  const MONEY_FIELD = document.getElementById("moneyField");
   let money = MONEY_FIELD.value;
   OUTPUT.innerHTML = "<p>You have $" + money + " in pocket money.</p>";
 }
