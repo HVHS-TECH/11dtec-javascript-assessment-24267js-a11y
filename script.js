@@ -19,7 +19,7 @@ const USER_ITEMS = document.getElementById("user item");
 let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
 function getFormInput() {
     let choice = USER_ITEMS.value;
-   
+   itemArray.push(choice);
 }
 
 function itemlist() {
