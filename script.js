@@ -22,7 +22,9 @@ var products = {
      finalnumber: 0,
 };
 
+const USER_ITEMS = document.getElementById("user item");
 
+let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
 
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
