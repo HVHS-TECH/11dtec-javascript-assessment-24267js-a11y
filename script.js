@@ -41,7 +41,9 @@ function getFormInput() {
     }
 }
 
-
+function itemlist() {
+    
+}
 
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
