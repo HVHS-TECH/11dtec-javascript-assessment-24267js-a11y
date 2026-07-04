@@ -71,8 +71,3 @@ function displayProducts(_product,_price){
 }
 
 
-function ViewitemsinCart() {
-    items();
-    getNameInput();
-    getMoneyInput();
-}
