@@ -42,6 +42,7 @@ function getFormInput() {
 }
 
 
+
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
   let username = NAME_FIELD.value;
