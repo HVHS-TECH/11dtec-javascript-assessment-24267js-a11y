@@ -30,6 +30,9 @@ function itemlist() {
 }
 
 
+function ViewItems() {
+    getFormInput();
+    itemlist();
 }
 
 
