@@ -1,7 +1,7 @@
-console.log("Hello world!")
+console.log("Hello world!");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-var username = "any"
+var username = "any";
 
 getmoneyInput(money);
 getNameInput(username);
