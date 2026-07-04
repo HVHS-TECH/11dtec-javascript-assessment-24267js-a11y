@@ -41,28 +41,8 @@ function itemlist() {
 }
 
 
-function getNameInput() {
-  const NAME_FIELD = document.getElementById("nameField");
-  let username = NAME_FIELD.value;
-  OUTPUT.innerHTML = "<p>Your name is " + username + "</p>";
 }
 
 
-function getmoneyInput() {
-  const MONEY_FIELD = document.getElementById("moneyField");
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  
-  let money = MONEY_FIELD.value;
-OUTPUT.innerHTML = "<p>You have $" + money + " to spend.</p>";
-}
-
-
-function items() {
-    OUTPUT.innerHTML += "<h1>Here Are The Items in your cart</h1>";
-}
-function displayProducts(_product,_price){
-    OUTPUT.innerHTML += _product + ": $" + _price.toFixed(2) + "<br>";
-    
-}
 
 
