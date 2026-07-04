@@ -1,5 +1,6 @@
-console.log("Hello world!");
-conole.log("running script.js");
+
+console.log("running script.js");
+ <link href="menu.html"></link>
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 var username = "any";
