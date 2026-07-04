@@ -25,6 +25,22 @@ var products = {
 const USER_ITEMS = document.getElementById("user item");
 
 let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
+function getFormInput() {
+    let choice = USER_ITEMS.value;
+    if (choice === "Yuja Ade") {
+        products["yuja ade"].amount += 1;
+        products["yuja ade"]._price += 5.00;
+    } else if (choice === "Strawberry Lemon Ade") {
+        products["strawberry,lemon ade"].amount += 1;
+        products["strawberry,lemon ade"]._price += 6.00;
+    } else if (choice === "Korean Strawberry Milk") {
+        products["Korean Strawberry Milk"].amount += 1;
+        products["Korean Strawberry Milk"]._price += 7.00;
+    } else {
+        OUTPUT.innerHTML = "<p>Invalid item choice. Please select a valid item.</p>";
+    }
+}
+
 
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
