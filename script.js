@@ -50,7 +50,7 @@ function getNameInput() {
 
 function getMoneyInput() {
   const MONEY_FIELD = document.getElementById("moneyField");
-  const OUTPUT = document.getElementById("output");
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   
   let money = MONEY_FIELD.value;
 OUTPUT.innerHTML = "<p>You have $" + money + " to spend.</p>";
