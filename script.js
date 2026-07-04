@@ -42,7 +42,8 @@ function getFormInput() {
 }
 
 function itemlist() {
-    
+    OUTPUT.innerHTML += "<h1>Here Are The Items in your cart</h1>";
+    for (let i = 0; i < itemArray.length; i++) {
 }
 
 function getNameInput() {
