@@ -1,12 +1,10 @@
 
 console.log("running script.js");
- <link href="menu.html"></link>
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 var username = "any";
 
-getmoneyInput(money);
-getNameInput(username);
+
 
 
 var products = {
