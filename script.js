@@ -1,4 +1,5 @@
 console.log("Hello world!");
+conole.log("running script.js");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 var username = "any";
