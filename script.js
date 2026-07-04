@@ -3,14 +3,6 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 var username = "any"
 
-
-
-
-
-
-
-
-
 getmoneyInput(money);
 getNameInput(username);
 
@@ -47,6 +39,7 @@ function itemlist() {
         OUTPUT.innerHTML += i + ":  " + itemArray[i] + "<br>";
     }
 }
+
 
 function getNameInput() {
   const NAME_FIELD = document.getElementById("nameField");
