@@ -48,7 +48,7 @@ function getNameInput() {
 }
 
 
-function getMoneyInput() {
+function getmoneyInput() {
   const MONEY_FIELD = document.getElementById("moneyField");
   const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   
