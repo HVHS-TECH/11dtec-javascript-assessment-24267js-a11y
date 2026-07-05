@@ -42,5 +42,11 @@ img{
 }
 
 button {
-  width: 
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
 }
