@@ -33,6 +33,9 @@ function itemlist() {
 function ViewItems() {
     getFormInput();
     itemlist();
+    yujaAde();
+    strawberryLemonAde();
+    koreanStrawberryMilk();
 }
 
 
