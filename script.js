@@ -54,6 +54,9 @@ function getKSMInput() {
 function ViewItems() {
     getformInput();
     itemlist();
+    getYJInput();
+    getSLInput();
+    getKSMInput();
 }
 
     
