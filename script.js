@@ -52,12 +52,11 @@ function getKSMInput() {
 }
 
 function ViewItems() {
-    getFormInput();
+    getformInput();
     itemlist();
-    getYJInput()
-    getSLInput();
-    getKSMInput();
 }
+
+    
 
 
 
