@@ -51,6 +51,13 @@ function getKSMInput() {
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: " + products["Korean Strawberry Milk"].amount + " Price: $" + products["Korean Strawberry Milk"]._price.toFixed(2) + "<br>";
 }
 
+
+function calculateTotal(_money, _price) {
+const MONEY_FIELD = document.getElementById("moneyField").value;
+let money = number(MONEY_FIELD.value).toFixed(2);
+
+    
+}
 function ViewItems() {
     itemlist(); 
 }
