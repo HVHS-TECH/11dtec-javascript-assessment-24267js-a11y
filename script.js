@@ -58,6 +58,13 @@ let money = number(MONEY_FIELD.value).toFixed(2);
 OUTPUT.innerHTML += "<p>Total: $" + _price.toFixed(2) + "</p>";
 }
 
+function worth() {
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    let money = number(MONEY_FIELD.value);
+    
+    
+}
 
 function ViewItems() {
     itemlist(); 
