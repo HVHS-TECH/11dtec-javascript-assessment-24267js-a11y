@@ -52,8 +52,7 @@ function getKSMInput() {
 }
 
 function ViewItems() {
-    itemlist();
-    
+    itemlist(); 
 }
 
     
