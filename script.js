@@ -55,9 +55,10 @@ function getKSMInput() {
 function calculateTotal(_money, _price) {
 const MONEY_FIELD = document.getElementById("moneyField").value;
 let money = number(MONEY_FIELD.value).toFixed(2);
-
-    
+OUTPUT.innerHTML += "<p>Total: $" + _price.toFixed(2) + "</p>";
 }
+
+
 function ViewItems() {
     itemlist(); 
 }
