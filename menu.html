@@ -67,7 +67,11 @@
 
 <center><h1>Checkout</h1></center>
 
-
+<form onsubmit="return false">
+    <label for="nameField">Name:</label>
+    <input type ="text" id="nameField" name="formName">
+    <input type="submit" value="submit" onclick="getNameInput()">
+</form>
 
 <center><button onclick="checkout()">Checkout</button>
 <form onsubmit="return false;"></form>
