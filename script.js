@@ -63,13 +63,24 @@ function worth() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     let money = number(MONEY_FIELD.value);
     
-    
+    if (money >= products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+    }
+
+    return money;
 }
 
 function ViewItems() {
     itemlist(); 
 }
 
+function checkout() {
+    calculateTotal(products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price);
+    worth();
+
+}
     
 
 
