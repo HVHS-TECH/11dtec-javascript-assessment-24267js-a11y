@@ -92,7 +92,8 @@ function ViewItems() {
 function checkout() {
     calculateTotal(products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price);
     worth();
-
+    getNameInput();
+    getMoneyInput();
 }
     
 
