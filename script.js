@@ -84,10 +84,7 @@ function moneyField() {
     let money = MONEY_FIELD.value;
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
-function ViewItems() {
-  
-   
-}
+
 
 function checkout() {
     calculateTotal();                                                   
