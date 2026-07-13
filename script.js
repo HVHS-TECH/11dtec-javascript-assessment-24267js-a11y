@@ -52,18 +52,20 @@ function getKSMInput() {
 }
 
 
-function calculateTotal(_money, _price) {
-const MONEY_FIELD = document.getElementById("moneyField").value;
-let money = number(MONEY_FIELD.value).toFixed(2);
-OUTPUT.innerHTML += "<p>Total: $" + _price.toFixed(2) + "</p>";
+function calculateTotal() {
+    let total = products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price;
+    OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
+    return total;
 }
+
+
 
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     let money = number(MONEY_FIELD.value);
     
-    if (money >= products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price) {
+    if (money >= calculateTotal()) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
@@ -90,7 +92,7 @@ function ViewItems() {
 }
 
 function checkout() {
-    calculateTotal(products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price);
+    
     worth();
     getNameInput();
     getMoneyInput();
