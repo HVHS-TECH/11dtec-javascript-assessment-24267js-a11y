@@ -93,7 +93,7 @@ function ViewItems() {
 }
 
 function checkout() {
-    calculateTotal();
+    calculateTotal();                                                   
     worth();
     getNameInput();
     getMoneyInput();
