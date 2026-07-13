@@ -89,6 +89,7 @@ function moneyField() {
 }
 function ViewItems() {
     itemlist(); 
+    calculateTotal();
 }
 
 function checkout() {
