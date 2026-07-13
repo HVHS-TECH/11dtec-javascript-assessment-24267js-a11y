@@ -24,10 +24,8 @@ function getFormInput() {
 
 function itemlist() {
     OUTPUT.innerHTML += "<h1>Your Selected Items</h1>";
-    for (let i = 0; i < itemArray.length; i++) {
-        OUTPUT.innerHTML += i + ":  " + itemArray[i] + "<br>";
-    }
 }
+
 
 
 function getYJInput() {
