@@ -60,7 +60,7 @@ function calculateTotal() {
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let money = number(MONEY_FIELD.value);
+    let money = Number(MONEY_FIELD.value);
     
     if (money >= calculateTotal()) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
