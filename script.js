@@ -20,11 +20,10 @@ let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
 function getFormInput() {
     let choice = USER_ITEMS.value;
    itemArray.push(choice);
+   OUTPUT.innerHTML += "<br>Item added: " + choice + "<br>";
 }
 
-function itemlist() {
-    OUTPUT.innerHTML += "<h1>Your Selected Items</h1>";
-}
+
 
 
 
@@ -86,7 +85,7 @@ function moneyField() {
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
 function ViewItems() {
-    itemlist(); 
+   
     calculateTotal();
 }
 
