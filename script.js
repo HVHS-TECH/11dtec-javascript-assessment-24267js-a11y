@@ -16,11 +16,11 @@ var products = {
 
 const USER_ITEMS = document.getElementById("user item");
 
+
 let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
 function getFormInput() {
     let choice = USER_ITEMS.value;
    itemArray.push(choice);
-   OUTPUT.innerHTML += "<br>Item added: " + choice + "<br>";
 }
 
 
@@ -85,8 +85,15 @@ function moneyField() {
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
 function ViewItems() {
+   if (itemArray.length > 0) {
+        OUTPUT.innerHTML += "<p>Items in cart:</p>";
+        for (let i = 0; i < itemArray.length; i++) {
+            OUTPUT.innerHTML += "<p>" + itemArray[i] + "</p>";
+        }
+    } else {
+        OUTPUT.innerHTML += "<p>No items in cart.</p>";
+    }
    
-    calculateTotal();
 }
 
 function checkout() {
