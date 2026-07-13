@@ -85,14 +85,7 @@ function moneyField() {
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
 function ViewItems() {
-   if (itemArray.length > 0) {
-        OUTPUT.innerHTML += "<p>Items in cart:</p>";
-        for (let i = 0; i < itemArray.length; i++) {
-            OUTPUT.innerHTML += "<p>" + itemArray[i] + "</p>";
-        }
-    } else {
-        OUTPUT.innerHTML += "<p>No items in cart.</p>";
-    }
+  
    
 }
 
