@@ -57,6 +57,23 @@ function calculateTotal() {
 
 
 
+
+
+function getNameInput() {
+    const NAME_FIELD = document.getElementById("nameField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    let name = NAME_FIELD.value;
+    OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
+    
+}
+
+function getMoneyInput() {
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    let money = MONEY_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
+}
+
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -69,20 +86,6 @@ function worth() {
     }
 
     return money;
-}
-
-function nameField() {
-    const NAME_FIELD = document.getElementById("nameField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let name = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
-}
-
-function moneyField() {
-    const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let money = MONEY_FIELD.value;
-    OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
 
 
