@@ -5,16 +5,12 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 var username = "any";
 
 
-
-
-var products = {
-    "yuja ade": { amount: 0, _price: 0},
-    "strawberry,lemon ade": { amount: 0, _price: 0 },
-    "Korean Strawberry Milk": { amount: 0, _price: 0 },
-     finalnumber: 0,
-};
-
-const USER_ITEMS = document.getElementById("user item");
+const products = [
+    "yuja ade", { amount: 0, _price: 0},
+   "strawberry,lemon ade", { amount: 0, _price: 0 },
+    "Korean Strawberry Milk", { amount: 0, _price: 0 },
+  
+];
 
 
 let itemArray = ["Yuja Ade", "Strawberry Lemon Ade", "Korean Strawberry Milk"];
@@ -22,6 +18,11 @@ function getFormInput() {
     let choice = USER_ITEMS.value;
    itemArray.push(choice);
 }
+
+const USER_ITEMS = document.getElementById("user item");
+
+
+
 
 
 
@@ -92,8 +93,7 @@ function worth() {
 function checkout() {
     calculateTotal();                                                   
     worth();
-    getNameInput();
-    getMoneyInput();
+    
 }
     
 
