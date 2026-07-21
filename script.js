@@ -54,10 +54,23 @@ function calculateTotal() {
     let total = products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price;
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
+    if (total > 0) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
 }
 
 
-
+function calculateChange(money, total) {
+    let change = money - total;
+    OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
+    return change;
+    if (change > 0) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+    }
+}
 
 
 function getNameInput() {
