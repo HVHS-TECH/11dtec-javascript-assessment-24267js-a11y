@@ -108,8 +108,4 @@ function checkout() {
     worth();
     
 }
-    
-
-
-
-
+  
