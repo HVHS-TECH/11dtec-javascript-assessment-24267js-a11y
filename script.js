@@ -11,7 +11,7 @@ let koreanStrawberryMilkAmount = 0;
 
 
 
-const products = [
+const items = [
     {
         name: "Yuja Ade",
         price: 5,
@@ -42,28 +42,28 @@ const products = [
 
 function getYJInput() {
     let YJInput = document.getElementById("YJField").value;
-    products["yuja ade"].amount = YJInput;
-    products["yuja ade"]._price = YJInput * 5.00;
-    OUTPUT.innerHTML += "<br>Yuja Ade: " + products["yuja ade"].amount + " Price: $" + products["yuja ade"]._price + "<br>";
+    items[0].amount = YJInput;
+    items[0]._price = YJInput * 5.00;
+    OUTPUT.innerHTML += "<br>Yuja Ade: " + items[0].amount + " Price: $" + items[0]._price + "<br>";
 }
 
 function getSLInput(){
     let SLInput = document.getElementById("SLField").value;
-    products["strawberry,lemon ade"]= SLInput;
-    products["strawberry,lemon ade"]._price = SLInput * 6.00;
-    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: " + products["strawberry,lemon ade"].amount + " Price: $" + products["strawberry,lemon ade"]._price.toFixed(2) + "<br>";
+    items[1].amount = SLInput;
+    items[1]._price = SLInput * 6.00;
+    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: " + items[1].amount + " Price: $" + items[1]._price.toFixed(2) + "<br>";
 }
 
 function getKSMInput(){
     let KSMInput = document.getElementById("KSMField").value;
-    products["Korean Strawberry Milk"]= KSMInput;
-    products["Korean Strawberry Milk"]._price = KSMInput * 7.00;
-    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: " + products["Korean Strawberry Milk"].amount + " Price: $" + products["Korean Strawberry Milk"]._price.toFixed(2) + "<br>";
+    items[2].amount = KSMInput;
+    items[2]._price = KSMInput * 7.00;
+    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: " + items[2].amount + " Price: $" + items[2]._price.toFixed(2) + "<br>";
 }
 
 
 function calculateTotal() {
-    let total = products["yuja ade"]._price + products["strawberry,lemon ade"]._price + products["Korean Strawberry Milk"]._price;
+    let total = items[0]._price + items[1]._price + items[2]._price;
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
     if (total > 0) {
