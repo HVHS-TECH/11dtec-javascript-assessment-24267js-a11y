@@ -110,6 +110,7 @@ function worth() {
     return money;
 }
 
+document.getElementById
 
 function checkout(){
     calculateTotal();                                                   
@@ -118,4 +119,3 @@ function checkout(){
 }
 }
 
-document.getElementById("checkout-btn").addEventListener("click", checkout);
