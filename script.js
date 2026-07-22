@@ -116,6 +116,8 @@ function checkout(){
     calculateTotal();                                                   
     worth();
     calculateChange();
+    getMoneyInput();
+    getNameInput();
 }
 }
 
