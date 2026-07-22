@@ -117,3 +117,5 @@ function checkout(){
     calculateChange();
 }
 }
+
+document.getElementById("checkout-btn").addEventListener("click", checkout);
