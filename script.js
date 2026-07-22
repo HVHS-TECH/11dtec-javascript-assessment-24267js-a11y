@@ -110,7 +110,7 @@ function worth() {
     return money;
 }
 
-document.getElementById
+document.getElementById("checkout()");
 
 function checkout(){
     calculateTotal();                                                   
