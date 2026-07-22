@@ -5,6 +5,10 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 var username = "any";
 
 
+let yujaAdeAmount = 0;
+let strawberryLemonAdeAmount = 0;
+let koreanStrawberryMilkAmount = 0;
+
 
 
 const products = [
