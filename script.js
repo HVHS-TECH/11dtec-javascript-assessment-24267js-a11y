@@ -5,19 +5,27 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 var username = "any";
 
 
-const products = [
-    "yuja ade", { amount: 0, _price: 0},
-   "strawberry,lemon ade", { amount: 0, _price: 0 },
-    "Korean Strawberry Milk", { amount: 0, _price: 0 },
-  
-];
 
 
 const products = [
     {
         name: "Yuja Ade",
         price: 5,
-        
+        imageSRC: "lemon.jpg",
+    }
+
+    ,
+    {
+        name: "Strawberry Lemon Ade",
+        price: 6,
+        imageSRC: "lemon.jpg",
+
+    }
+    ,
+    {
+        name: "Korean Strawbery Milk",
+        price: 7,
+        imageSRC: "lemon.jpg",
     }
 ]
 
