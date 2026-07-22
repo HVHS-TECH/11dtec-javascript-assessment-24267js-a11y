@@ -111,7 +111,7 @@ function worth() {
 }
 
 
-function checkout() {
+function checkout(){
     calculateTotal();                                                   
     worth();
     calculateChange();
