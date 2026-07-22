@@ -40,7 +40,7 @@ function getYJInput() {
     let YJInput = document.getElementById("YJField").value;
     products["yuja ade"] = YJInput;
     products["yuja ade"]._price = YJInput * 5.00;
-    OUTPUT.innerHTML += "<br>Yuja Ade: " + products["yuja ade"].amount + " Price: $" + products["yuja ade"]._price.toFixed(2) + "<br>";
+    OUTPUT.innerHTML += "<br>Yuja Ade: " + products["yuja ade"].amount + " Price: $" + products["yuja ade"]._price + "<br>";
 }
 
 function getSLInput(){
