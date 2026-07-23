@@ -46,7 +46,8 @@ function ItemList() {
 
 
 
-  const YJInput = document.getElementById("YJField")
+  const YJInput = document.getElementById("YJField");
+
 function getYJInput() {
   let input = YJInput.value;
     
@@ -56,42 +57,33 @@ function getYJInput() {
 }
 
 
-
+ const SLInput = document.getElementById("SLField");
 function getSLInput(){
-    let SLInput = document.getElementById("SLField").value;
-    items[1].amount = SLInput;
-    items[1]._price = SLInput * 6.00;
-    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: " + items[1].amount + " Price: $" + items[1]._price.toFixed(2) + "<br>";
+    let input = SLInput.value;
+   
+    let calc = itemArray[1].price * input;
+    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: $" + calc;
 }
+   
+const KSMInput = document.getElementById("KSMField");
 
 function getKSMInput(){
-    let KSMInput = document.getElementById("KSMField").value;
-    items[2].amount = KSMInput;
-    items[2]._price = KSMInput * 7.00;
-    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: " + items[2].amount + " Price: $" + items[2]._price.toFixed(2) + "<br>";
+    let input = KSMInput.value;
+    
+    let calc = itemArray[2].price * input;
+    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
 }
+   
 
 
 function calculateTotal() {
-    let total = items[0]._price + items[1]._price + items[2]._price;
+    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
     if (total > 0) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
-}
-
-
-function calculateChange(money, total) {
-    let change = money - total;
-    OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
-    return change;
-    if (change > 0) {
-        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
-    }
 }
 
 
@@ -111,6 +103,19 @@ function getMoneyInput() {
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
 
+
+function calculateChange(money, total) {
+    let change = money - total;
+    OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
+    return change;
+    if (change > 0) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+    }
+}
+
+
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -125,7 +130,7 @@ function worth() {
     return money;
 }
 
-document.getElementById(checkout());
+document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 function checkout(){
     calculateTotal();                                                   
