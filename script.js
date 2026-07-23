@@ -10,42 +10,52 @@ let strawberryLemonAdeAmount = 0;
 let koreanStrawberryMilkAmount = 0;
 
 
+let itemArray = [
+    {name: "Yuja Ade",
+     price: 5,
+     },
 
-const items = [
-    {
-        name: "Yuja Ade",
-        price: 5,
-        imageSRC: "lemon.jpg",
-    }
-
-    ,
-    {
-        name: "Strawberry Lemon Ade",
-        price: 6,
-        imageSRC: "lemon.jpg",
-
-    }
-    ,
-    {
-        name: "Korean Strawbery Milk",
-        price: 7,
-        imageSRC: "lemon.jpg",
-    }
-]
+      {name: "Strawberry Lemon Ade",
+     price: 6,
+     },
+      {name:"Korean Strawberry Milk ",
+     price: 7,
+     }
+    
+    ];
 
 
 
 
 
 
+function GetformInput() {
+    let choice = USER.ITEM.value;
+    itemArray.push(choice)
+    OUTPUT.innerHTML += "<center><p>Here are the items available</p></center>";
+} 
 
-
-function getYJInput() {
-    let YJInput = document.getElementById("YJField").value;
-    items[0].amount = YJInput;
-    items[0]._price = YJInput * 5.00;
-    OUTPUT.innerHTML += "<br>Yuja Ade: " + items[0].amount + " Price: $" + items[0]._price + "<br>";
+function ItemList() {
+     OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
+    for(i=0; i<itemArray.length; i++){
+        OUTPUT.innerHTML += i + ":" + itemArray[i] + "<br>" 
 }
+}
+
+
+
+
+
+  const YJInput = document.getElementById("YJField")
+function getYJInput() {
+  let input = YJInput.value;
+    
+  let calc = itemArray[0].price * input;
+   
+    OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc;
+}
+
+
 
 function getSLInput(){
     let SLInput = document.getElementById("SLField").value;
@@ -114,7 +124,7 @@ function worth() {
     return money;
 }
 
-document.getElementById("checkout()");
+document.getElementById(checkout());
 
 function checkout(){
     calculateTotal();                                                   
