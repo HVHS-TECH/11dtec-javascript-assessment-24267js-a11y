@@ -103,6 +103,7 @@ function getNameInput() {
     
 }
 
+
 function getMoneyInput() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
