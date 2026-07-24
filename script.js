@@ -171,3 +171,25 @@ if (YujaQTY === 0 && slQTY === 0 && ksmQTY === 0) {
 
     alert("Thank you for your order!");
 }
+
+
+function reset() {
+    document.getElementById("YJField").value = "";
+    document.getElementById("SLField").value = "";
+    document.getElementById("KSMField").value = "";
+    document.getElementById("nameField").value = "";
+    document.getElementById("moneyField").value = "";
+
+    // reset quantities
+    YujaQTY = 0;
+    slQTY = 0;
+    ksmQTY = 0;
+
+    // reset order count
+    orderCount = 0;
+
+    // clear output
+    OUTPUT.innerHTML = "";
+
+    alert("Form has been reset!");
+}
