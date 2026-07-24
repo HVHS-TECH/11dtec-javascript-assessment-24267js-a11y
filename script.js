@@ -126,18 +126,18 @@ function orderCountFunction() {
 document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 function checkout() {
-    calculateTotal();                                                   
+    calculateTotal(money, total);                                                   
     worth();
     calculateChange();
     getMoneyInput();
     getNameInput();
    
     if (orderCount == 0) {
-        alert("You have not placed an order yet. Please select items before checking out.");
+        alert("You have not placed an order yet.");
         return;
 
         if (orderCount > 0) {
             alert("Thank you for your order!");
         }
    }
-   
+
