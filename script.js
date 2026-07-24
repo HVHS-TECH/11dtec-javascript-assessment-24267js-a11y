@@ -120,6 +120,13 @@ function worth() {
     return money;
 }
 
+
+let orderCount = 0;
+function orderCountFunction() {
+    orderCount++;
+    OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
+    return orderCount;
+}
 document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 function checkout(){
@@ -129,5 +136,13 @@ function checkout(){
     getMoneyInput();
     getNameInput();
    
-}
+    if (orderCount == 0) {
+        alert("You have not placed an order yet. Please select items before checking out.");
+        return;
 
+        if (orderCount > 0) {
+            alert("Thank you for your order!");
+        }
+   }
+}
+}
