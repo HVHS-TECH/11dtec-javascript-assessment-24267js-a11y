@@ -1,92 +1,72 @@
 
 console.log("running script.js");
 
-//OUTPUT defined
+// OUTPUT defined
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+// Item Data
+const itemArray = [
+    { name: "Yuja Ade", price: 5 },
+    { name: "Strawberry Lemon Ade", price: 6 },
+    { name: "Korean Strawberry Milk", price: 7 }
+];
 
-//Item Data
-let itemArray = [
-    {name: "Yuja Ade", price: 5},
-    {name: "Strawberry Lemon Ade", price: 6},
-    {name:"Korean Strawberry Milk ", price: 7},
-    ];
+// Inputs
+const YJInput = document.getElementById("YJField");
+const SLInput = document.getElementById("SLField");
+const KSMInput = document.getElementById("KSMField");
 
-//Inputs
-  const YJInput = document.getElementById("YJField");
-  const SLInput = document.getElementById("SLField");
-  const KSMInput = document.getElementById("KSMField");
-
-//Item Input Functions
-
+// Item Input Functions
 function getYJInput() {
-  let input = YJInput.value;
-  let calc = itemArray[0].price * input;
-  OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc;
+    const input = Number(YJInput.value);
+    const calc = itemArray[0].price * input;
+    OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc.toFixed(2);
 }
 
-function getSLInput(){
-    let input = SLInput.value;
-    let calc = itemArray[1].price * input;
-    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: $" + calc;
+function getSLInput() {
+    const input = Number(SLInput.value);
+    const calc = itemArray[1].price * input;
+    OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: $" + calc.toFixed(2);
 }
-   
-function getKSMInput(){
-    let input = KSMInput.value;
-    let calc = itemArray[2].price * input;
-    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
+
+function getKSMInput() {
+    const input = Number(KSMInput.value);
+    const calc = itemArray[2].price * input;
+    OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc.toFixed(2);
 }
-   
- //Item List       
+
+// Item List
 function ItemList() {
-     OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
-    for (let i = 0; i < itemArray.length; i++){ 
-         OUTPUT.innerHTML += i + ": " + itemArray[i].name + "<br>" 
+    OUTPUT.innerHTML += "<br>These Are The Items Available <br>";
+    for (let i = 0; i < itemArray.length; i++) {
+        OUTPUT.innerHTML += i + ": " + itemArray[i].name + "<br>";
+    }
 }
 
 // Name and Money Input Functions
 function getNameInput() {
     const NAME_FIELD = document.getElementById("nameField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let name = NAME_FIELD.value;
+    const name = NAME_FIELD.value;
     OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
-    
 }
-
 
 function getMoneyInput() {
     const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let money = MONEY_FIELD.value;
-    OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
+    const money = Number(MONEY_FIELD.value);
+    OUTPUT.innerHTML += "<p>You have $" + money.toFixed(2) + " to spend.</p>";
+    return money;
 }
 
-//Total Calculation
+// Total Calculation
 function calculateTotal() {
-    let total = 
-    itemArray[0].price + 
-    itemArray[1].price + 
-    itemArray[2].price;
-
+    const total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
-
-    if (total > 0) {
-        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
 }
 
 // Change Calculation
 function calculateChange(money, total) {
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
-    OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
-
-    let change = money - total;
+    const change = money - total;
     OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
     return change;
     if (change > 0) {
@@ -144,6 +124,4 @@ function checkout() {
     }
 
     alert("Thank you for your order!");
-
-
 }
