@@ -25,38 +25,19 @@ function getYJInput() {
   OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc;
 }
 
-
- 
 function getSLInput(){
     let input = SLInput.value;
-   
     let calc = itemArray[1].price * input;
     OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: $" + calc;
 }
    
-const KSMInput = document.getElementById("KSMField");
-
 function getKSMInput(){
     let input = KSMInput.value;
-    
     let calc = itemArray[2].price * input;
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
 }
    
         
-let itemArray = [
-    {name: "Yuja Ade",
-     price: 5,
-     },
-
-      {name: "Strawberry Lemon Ade",
-     price: 6,
-     },
-      {name:"Korean Strawberry Milk ",
-     price: 7,
-     }
-    
-    ];
 
 
 function ItemList() {
