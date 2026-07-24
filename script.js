@@ -25,16 +25,6 @@ let itemArray = [
     ];
 
 
-
-
-
-
-function GetformInput() {
-    let choice = USER.ITEM.value;
-    itemArray.push(choice)
-    OUTPUT.innerHTML += "<center><p>Here are the items available</p></center>";
-} 
-
 function ItemList() {
      OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
     for(i=0; i<itemArray.length; i++){
