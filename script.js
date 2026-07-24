@@ -146,12 +146,3 @@ function checkout() {
     alert("Thank you for your order!");
 
 
-
-
-
-
-
-
-
-
-
