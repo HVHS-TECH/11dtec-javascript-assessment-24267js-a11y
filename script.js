@@ -89,9 +89,8 @@ function calculateChange(money, total) {
 
 // Worth Check
 function worth() {
-    const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("SpaceForJavaScriptOutput");
-    let money = Number(MONEY_FIELD.value);
+   
+    const money = Number(document.getElementById("moneyField").value);
     let total = calculateTotal();
     
     if (money >= total ()) {
