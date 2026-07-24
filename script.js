@@ -56,8 +56,8 @@ let itemArray = [
 
 function ItemList() {
      OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
-    for(  (i=0; i<itemArray; i++)){
-        OUTPUT.innerHTML += i + ":" + itemArray[i].name + "<br>" 
+    for (i=0; i<itemArray; i++)){
+        console.log OUTPUT.innerHTML += i + ":" + itemArray[i].name + "<br>" 
 }
 }
 
