@@ -149,10 +149,15 @@ function checkout() {
     } if (ksmQTY > 0) {
         OUTPUT.innerHTML += "Korean Strawberry Milk: " + ksmQTY + "<br>";
     }
+
+
 OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Money Provided: $" + money.toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Change: $" + calculateChange(money, total).toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Thank you for your order!<br>";
+
+// Calculate change
+    const change = money - total;
 
 
 //not enough money 
