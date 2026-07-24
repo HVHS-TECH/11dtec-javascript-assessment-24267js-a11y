@@ -143,12 +143,17 @@ OUTPUT.innerHTML += "<br>Money Provided: $" + money.toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Change: $" + calculateChange(money, total).toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Thank you for your order!<br>";
 
-//
+//not enough money 
+if (money < total) {
+    OUTPUT.innerHTML += "<br>Sorry, you do not have ebough money to make this purchase.<br>";
+    alert("Not Enough Money!");
+    return;
+}
 
-    if (orderCount === 0) {
-        alert("You have not placed an order yet. Please select items before checking out.");
-        return;
-    }
+//No items ordered 
+if (YujaQTY === 0 && slQTY === 0 && ksmQTY === 0) {
+    Alert("No items ordered!");
+}
 
     alert("Thank you for your order!");
 }
