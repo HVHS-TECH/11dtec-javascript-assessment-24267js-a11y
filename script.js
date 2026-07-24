@@ -159,7 +159,7 @@ OUTPUT.innerHTML += "<br>Thank you for your order!<br>";
 
 //not enough money 
 if (money < total) {
-    OUTPUT.innerHTML += "<br>Sorry, you do not have ebough money to make this purchase.<br>";
+    OUTPUT.innerHTML += "<br>Sorry, you do not have enough money to make this purchase.<br>";
     alert("Not Enough Money!");
     return;
 }
