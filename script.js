@@ -38,6 +38,7 @@ function getKSMInput(){
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
 }
    
+        
 let itemArray = [
     {name: "Yuja Ade",
      price: 5,
