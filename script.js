@@ -156,9 +156,6 @@ OUTPUT.innerHTML += "<br>Money Provided: $" + money.toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Change: $" + calculateChange(money, total).toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Thank you for your order!<br>";
 
-// Calculate change
-    const change = money - total;
-
 
 //not enough money 
 if (money < total) {
