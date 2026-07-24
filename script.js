@@ -54,8 +54,16 @@ function getNameInput() {
     const NAME_FIELD = document.getElementById("nameField");
     const name = NAME_FIELD.value;
 if (
-    name.includes("0") 
-    name.includes("1")
+    name.includes("0") ||
+    name.includes("1") ||
+    name.includes("2") ||
+    name.includes("3") ||
+    name.includes("4") ||
+    name.includes("5") ||
+    name.includes("6") ||
+    name.includes("7") ||
+    name.includes("8") ||
+    name.includes("9") 
 )
     OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
 }
