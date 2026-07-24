@@ -133,24 +133,25 @@ function orderCountFunction() {
 
     orderCount++;
     OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
-    
+
     return orderCount;
 }
 
 document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 function checkout() {
-    calculateTotal(money, total);                                                   
+   const total = calculateTotal();  
+   const money = getMoneyInput();
+
     worth();
-    calculateChange();
-    getMoneyInput();
+    calculateChange(money, total);
     getNameInput();
    
-    if (orderCount == 0) {
-        alert("You have not placed an order yet.");
+    if (orderCount === 0) {
+        alert("You have not placed an order yet.Place an order before checking out.");
         return;
         }
    }
-if (orderCount > 0) {
-            alert("Thank you for your order!");
+ {
+   alert("Thank you for your order!");
 }
