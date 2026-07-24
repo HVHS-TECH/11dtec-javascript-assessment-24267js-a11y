@@ -7,10 +7,8 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 //Item Data
 let itemArray = [
-    {name: "Yuja Ade", price: 5,}
-    {name: "Strawberry Lemon Ade",
-     price: 6,
-     },
+    {name: "Yuja Ade", price: 5},
+    {name: "Strawberry Lemon Ade", price: 6},
       {name:"Korean Strawberry Milk ",
      price: 7,
      }
