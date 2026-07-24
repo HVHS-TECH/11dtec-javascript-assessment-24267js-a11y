@@ -30,14 +30,14 @@ function getYJInput() {
 }
 
 function getSLInput() {
-    const input = Number(SLInput.value);
-    const calc = itemArray[1].price * input;
+    slQTY  = Number(SLInput.value);
+    const calc = itemArray[1].price * slQTY;
     OUTPUT.innerHTML += "<br>Strawberry Lemon Ade: $" + calc.toFixed(2);
 }
 
 function getKSMInput() {
-    const input = Number(KSMInput.value);
-    const calc = itemArray[2].price * input;
+    ksmQTY = Number(KSMInput.value);
+    const calc = itemArray[2].price * ksmQTY;
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc.toFixed(2);
 }
 
