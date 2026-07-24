@@ -89,11 +89,10 @@ function calculateChange(money, total) {
 
 // Worth Check
 function worth() {
-   
     const money = Number(document.getElementById("moneyField").value);
-    let total = calculateTotal();
-    
-    if (money >= total ()) {
+    const total = calculateTotal();
+
+    if (money >= total) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
@@ -101,6 +100,9 @@ function worth() {
 
     return money;
 }
+
+
+   
 
 // Order Count
 
