@@ -122,6 +122,17 @@ document.getElementById("checkoutButton").addEventListener("click", checkout);
 // Checkout Function
 function checkout() {
     OUTPUT.innerHTML = "<hr><h2>Receipt</h2></hr>";
+
+    // Customer info
+    const NAME_FIELD = document.getElenemtById("nameField");
+    const name = NAME_FIELD.value;
+    OUTPUT.innerHTML += "<p>Customer Name: " + name + "</p>";
+ 
+    //get money
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const money = Number(MONEY_FIELD.value);
+    OUTPUT.innerHTML += "<p>Money Provided: $" + money.toFixed(2) + "</p>";
+
     const total = calculateTotal();
     const money = getMoneyInput();
 
