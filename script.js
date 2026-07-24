@@ -12,24 +12,21 @@ let itemArray = [
     {name:"Korean Strawberry Milk ", price: 7},
     ];
 
-
-let yujaAdeAmount = 0;
-let strawberryLemonAdeAmount = 0;
-let koreanStrawberryMilkAmount = 0;
-
-
+//Inputs
   const YJInput = document.getElementById("YJField");
+  const SLInput = document.getElementById("SLField");
+  const KSMInput = document.getElementById("KSMField");
+
+//Item Input Functions
 
 function getYJInput() {
   let input = YJInput.value;
-    
   let calc = itemArray[0].price * input;
-   
-    OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc;
+  OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc;
 }
 
 
- const SLInput = document.getElementById("SLField");
+ 
 function getSLInput(){
     let input = SLInput.value;
    
