@@ -44,6 +44,25 @@ function ItemList() {
          OUTPUT.innerHTML += i + ": " + itemArray[i].name + "<br>" 
 }
 
+// Name and Money Input Functions
+function getNameInput() {
+    const NAME_FIELD = document.getElementById("nameField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let name = NAME_FIELD.value;
+    OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
+    
+}
+
+
+function getMoneyInput() {
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let money = MONEY_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
+}
+
 //Total Calculation
 function calculateTotal() {
     let total = 
@@ -125,27 +144,6 @@ function checkout() {
     }
 
     alert("Thank you for your order!");
-
-
-
-
-function getNameInput() {
-    const NAME_FIELD = document.getElementById("nameField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let name = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
-    
-}
-
-
-function getMoneyInput() {
-    const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let money = MONEY_FIELD.value;
-    OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
-}
 
 
 
