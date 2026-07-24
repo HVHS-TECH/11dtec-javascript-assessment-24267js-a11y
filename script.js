@@ -85,7 +85,7 @@ function getNameInput() {
 function getMoneyInput() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    
+
     let money = MONEY_FIELD.value;
     OUTPUT.innerHTML += "<p>You have $" + money + " to spend.</p>";
 }
@@ -112,9 +112,11 @@ function calculateChange(money, total) {
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
     let money = Number(MONEY_FIELD.value);
+    let total = calculateTotal();
     
-    if (money >= calculateTotal()) {
+    if (money >= total ()) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
@@ -125,9 +127,13 @@ function worth() {
 
 
 let orderCount = 0;
+
 function orderCountFunction() {
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
     orderCount++;
     OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
+    
     return orderCount;
 }
 
