@@ -123,7 +123,12 @@ document.getElementById("checkoutButton").addEventListener("click", checkout);
 function checkout() {
     OUTPUT.innerHTML = "<hr><h2>Receipt</h2></hr>";
 
- 
+  // get customer name and money input
+  const NAME_FIELD = document.getElementById("nameField");
+  const name = NAME_FIELD.value;
+
+  const MONEY_FIELD = document.getElementById("moneyField");
+  const money = Number("MONEY_FIELD.value");
 
     const total = calculateTotal();
     const money = getMoneyInput();
