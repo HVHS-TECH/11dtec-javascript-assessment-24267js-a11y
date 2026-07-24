@@ -132,9 +132,7 @@ function checkout() {
     calculateChange(money, total);
     getNameInput();
 
-    // print name 
-    NAME_FIELD = document.getElementById("nameField");
-    const name = NAME_FIELD.value;
+    
 
 
     // Print items purchased 
