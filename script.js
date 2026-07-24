@@ -37,24 +37,62 @@ function getKSMInput(){
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
 }
    
-        
-
-
+ //Item List       
 function ItemList() {
      OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
-    for (i=0; i<itemArray; i++){ console.log("milk")
-         OUTPUT.innerHTML += i + ":" + itemArray[i].name + "<br>" 
-}
+    for (let i = 0; i < itemArray.length; i++){ 
+         OUTPUT.innerHTML += i + ": " + itemArray[i].name + "<br>" 
 }
 
+//Total Calculation
 function calculateTotal() {
-    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
+    let total = 
+    itemArray[0].price + 
+    itemArray[1].price + 
+    itemArray[2].price;
+
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
+
     if (total > 0) {
         OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+}
+
+// Change Calculation
+function calculateChange(money, total) {
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
+    OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
+
+    let change = money - total;
+    OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
+    return change;
+    if (change > 0) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+    }
+    return change;
+}
+
+// Worth Check
+function worth() {
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let money = Number(MONEY_FIELD.value);
+    let total = calculateTotal();
+    
+    if (money >= total ()) {
+        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
+    }
+
+    return money;
 }
 
 
@@ -77,39 +115,10 @@ function getMoneyInput() {
 }
 
 
-function calculateChange(money, total) {
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
-    OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
-
-    let change = money - total;
-    OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
-    return change;
-    if (change > 0) {
-        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
-    }
-    return change;
-}
 
 
-function worth() {
-    const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    let money = Number(MONEY_FIELD.value);
-    let total = calculateTotal();
-    
-    if (money >= total ()) {
-        OUTPUT.innerHTML += "<p>Thank you for your purchase!</p>";
-    } else {
-        OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
-    }
 
-    return money;
-}
 
 
 let orderCount = 0;
