@@ -53,9 +53,7 @@ function ItemList() {
 function getNameInput() {
     const NAME_FIELD = document.getElementById("nameField");
     const name = NAME_FIELD.value;
-    if ((name)) {
 
-    }
     OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
 }
 
