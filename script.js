@@ -133,7 +133,6 @@ function checkout() {
     getMoneyInput();
     getNameInput();
    
-
     if (orderCount == 0) {
         alert("You have not placed an order yet. Please select items before checking out.");
         return;
