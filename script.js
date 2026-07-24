@@ -125,10 +125,9 @@ function checkout() {
 
   // get customer name and money input
   const NAME_FIELD = document.getElementById("nameField");
-  const name = NAME_FIELD.value;
-
+  
   const MONEY_FIELD = document.getElementById("moneyField");
-  const money = Number("MONEY_FIELD.value");
+  
 
     const total = calculateTotal();
     const money = getMoneyInput();
@@ -153,7 +152,7 @@ function checkout() {
 
 OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
 OUTPUT.innerHTML += "<br>Money Provided: $" + money.toFixed(2) + "<br>";
-OUTPUT.innerHTML += "<br>Change: $" + calculateChange(money, total).toFixed(2) + "<br>";
+const change = money - total;
 OUTPUT.innerHTML += "<br>Thank you for your order!<br>";
 
 
