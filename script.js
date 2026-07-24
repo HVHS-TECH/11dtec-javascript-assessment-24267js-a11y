@@ -64,7 +64,10 @@ if (
     name.includes("7") ||
     name.includes("8") ||
     name.includes("9") 
-)
+) {
+    alert("Please enter a valid name (Letters");
+    return;
+}
     OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
 }
 
