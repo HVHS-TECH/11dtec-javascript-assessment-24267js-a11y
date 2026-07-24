@@ -9,10 +9,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 let itemArray = [
     {name: "Yuja Ade", price: 5},
     {name: "Strawberry Lemon Ade", price: 6},
-      {name:"Korean Strawberry Milk ",
-     price: 7,
-     }
-    
+    {name:"Korean Strawberry Milk ", price: 7},
     ];
 
 
