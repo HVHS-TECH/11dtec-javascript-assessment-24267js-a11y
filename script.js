@@ -2,38 +2,12 @@
 console.log("running script.js");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-var username = "any";
+
 
 
 let yujaAdeAmount = 0;
 let strawberryLemonAdeAmount = 0;
 let koreanStrawberryMilkAmount = 0;
-
-
-let itemArray = [
-    {name: "Yuja Ade",
-     price: 5,
-     },
-
-      {name: "Strawberry Lemon Ade",
-     price: 6,
-     },
-      {name:"Korean Strawberry Milk ",
-     price: 7,
-     }
-    
-    ];
-
-
-function ItemList() {
-     OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
-    for(i=0; i<itemArray.length; i++){
-        OUTPUT.innerHTML += i + ":" + itemArray[i] + "<br>" 
-}
-}
-
-
-
 
 
   const YJInput = document.getElementById("YJField");
@@ -64,7 +38,27 @@ function getKSMInput(){
     OUTPUT.innerHTML += "<br>Korean Strawberry Milk: $" + calc;
 }
    
+let itemArray = [
+    {name: "Yuja Ade",
+     price: 5,
+     },
 
+      {name: "Strawberry Lemon Ade",
+     price: 6,
+     },
+      {name:"Korean Strawberry Milk ",
+     price: 7,
+     }
+    
+    ];
+
+
+function ItemList() {
+     OUTPUT.innerHTML += "<br>These Are The Items Availabile <br>";
+    for(i=0; i<itemArray.length; i++){
+        OUTPUT.innerHTML += i + ":" + itemArray[i] + "<br>" 
+}
+}
 
 function calculateTotal() {
     let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
