@@ -135,9 +135,8 @@ function checkout() {
     if (orderCount == 0) {
         alert("You have not placed an order yet.");
         return;
-
-        if (orderCount > 0) {
-            alert("Thank you for your order!");
         }
    }
-
+if (orderCount > 0) {
+            alert("Thank you for your order!");
+}
