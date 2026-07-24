@@ -69,7 +69,7 @@ function calculateTotal() {
     (itemArray[0].price * YujaQTY)+ 
     (itemArray[1].price * slQTY) +
     itemArray[2].price * ksmQTY;
-    
+
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
 }
@@ -121,12 +121,24 @@ document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 // Checkout Function
 function checkout() {
+    OUTPUT.innerHTML = "<hr><h2>Receipt</h2></hr>";
     const total = calculateTotal();
     const money = getMoneyInput();
 
     worth();
     calculateChange(money, total);
     getNameInput();
+
+    // Print items purchased 
+    OUTPUT.innnerHTML += "<br>Items Purchased:<br>";
+    if (YujaQTY > 0) {
+        OUTPUT.innerHTML += "Yuja Ade: " + YujaQTY + "<br>";
+    } if (slQTY > 0) {
+        OUTPUT.innerHTML += "Strawberry Lemon Ade: " + slQTY + "<br>";
+    } if (ksmQTY > 0) {
+        OUTPUT.innerHTML += "Korean Strawberry Milk: " + ksmQTY + "<br>";
+    }
+
 
     if (orderCount === 0) {
         alert("You have not placed an order yet. Please select items before checking out.");
