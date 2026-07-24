@@ -90,6 +90,11 @@ function getMoneyInput() {
 
 
 function calculateChange(money, total) {
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
+    OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
+
     let change = money - total;
     OUTPUT.innerHTML += "<br>Change: $" + change.toFixed(2) + "<br>";
     return change;
@@ -98,6 +103,7 @@ function calculateChange(money, total) {
     } else {
         OUTPUT.innerHTML += "<p>Sorry, you do not have enough money to make this purchase.</p>";
     }
+    return change;
 }
 
 
