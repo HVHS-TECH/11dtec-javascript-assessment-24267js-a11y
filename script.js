@@ -55,6 +55,7 @@ function getNameInput() {
     const name = NAME_FIELD.value;
 if (
     name.includes("0") 
+    name.includes("1")
 )
     OUTPUT.innerHTML += "<p>Hello, " + name + "!</p>";
 }
