@@ -1,5 +1,7 @@
 
 console.log("running script.js");
+
+//OUTPUT defined
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 
