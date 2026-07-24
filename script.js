@@ -11,6 +11,12 @@ const itemArray = [
     { name: "Korean Strawberry Milk", price: 7 }
 ];
 
+//Quantities 
+
+let YujaQTY = 0;
+let slQTY = 0;
+let ksmQTY = 0;
+
 // Inputs
 const YJInput = document.getElementById("YJField");
 const SLInput = document.getElementById("SLField");
