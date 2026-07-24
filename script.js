@@ -65,7 +65,11 @@ function getMoneyInput() {
 
 // Total Calculation
 function calculateTotal() {
-    const total = itemArray[0].price + itemArray[1].price + itemArray[2].price;
+    const total = 
+    (itemArray[0].price * YujaQTY)+ 
+    (itemArray[1].price * slQTY) +
+    itemArray[2].price * ksmQTY;
+    
     OUTPUT.innerHTML += "<br>Total: $" + total.toFixed(2) + "<br>";
     return total;
 }
