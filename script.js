@@ -121,6 +121,7 @@ function orderCountFunction() {
     OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
     return orderCount;
 }
+
 document.getElementById("checkoutButton").addEventListener("click", checkout);
 
 function checkout() {
