@@ -81,8 +81,7 @@ function calculateChange(money, total) {
 // Worth Check
 function worth() {
     const MONEY_FIELD = document.getElementById("moneyField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+    const OUTPUT = document.getElementById("SpaceForJavaScriptOutput");
     let money = Number(MONEY_FIELD.value);
     let total = calculateTotal();
     
@@ -94,6 +93,40 @@ function worth() {
 
     return money;
 }
+
+// Order Count
+
+let orderCount = 0;
+
+function orderCountFunction() {
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    orderCount++;
+    OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
+
+    return orderCount;
+}
+
+//Checkout Button Listner
+document.getElementById("checkoutButton").addEventListener("click", checkout); 
+
+// Checkout Function
+function checkout() {
+    const total = calculateTotal();
+    const money = getMoneyInput();
+
+    worth();
+    calculateChange(money, total);
+    getNameInput();
+
+    if (orderCount === 0) {
+        alert("You have not placed an order yet. Please select items before checking out.");
+        return;
+    }
+
+    alert("Thank you for your order!");
+
+
 
 
 function getNameInput() {
@@ -121,31 +154,6 @@ function getMoneyInput() {
 
 
 
-let orderCount = 0;
 
-function orderCountFunction() {
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    orderCount++;
-    OUTPUT.innerHTML += "<br>Order Count: " + orderCount + "<br>";
 
-    return orderCount;
-}
-
-document.getElementById("checkoutButton").addEventListener("click", checkout);
-
-function checkout() {
-    const total = calculateTotal();
-    const money = getMoneyInput();
-
-    worth();
-    calculateChange(money, total);
-    getNameInput();
-
-    if (orderCount === 0) {
-        alert("You have not placed an order yet. Please select items before checking out.");
-        return;
-    }
-
-    alert("Thank you for your order!");
-}
