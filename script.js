@@ -128,6 +128,6 @@ function checkout(){
     calculateChange();
     getMoneyInput();
     getNameInput();
-}
+   
 }
 
