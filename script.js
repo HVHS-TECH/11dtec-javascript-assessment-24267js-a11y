@@ -165,9 +165,11 @@ if (money < total) {
 }
 
 //No items ordered 
-if (YujaQTY === 0 && slQTY === 0 && ksmQTY === 0) {
-    Alert("No items ordered!");
+if (yujaQty === 0 && slQty === 0 && ksmQty === 0) {
+    alert("No items ordered!");
+    return;
 }
+
 
     alert("Thank you for your order!");
 }
