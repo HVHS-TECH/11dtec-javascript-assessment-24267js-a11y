@@ -24,8 +24,8 @@ const KSMInput = document.getElementById("KSMField");
 
 // Item Input Functions
 function getYJInput() {
-    const input = Number(YJInput.value);
-    const calc = itemArray[0].price * input;
+    YujaQTY = Number(YJInput.value);
+    const calc = itemArray[0].price * YujaQTY;
     OUTPUT.innerHTML += "<br>Yuja Ade: $" + calc.toFixed(2);
 }
 
