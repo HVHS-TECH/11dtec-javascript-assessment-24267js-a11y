@@ -89,6 +89,7 @@ function calculateTotal() {
     return total;
 }
 
+
 // Change Calculation
 function calculateChange(money, total) {
     const change = money - total;
